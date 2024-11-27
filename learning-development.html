@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanulás és Fejlesztés</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Tanulás és Fejlesztés</h1>
+        <form action="/learning-development" method="POST">
+            <label for="project-name">Projekt neve:</label>
+            <input type="text" id="project-name" name="project-name" placeholder="Pl.: Ügyfélportál fejlesztés">
+            
+            <label for="learnings">Tanulságok:</label>
+            <textarea id="learnings" name="learnings" rows="5" placeholder="Írja le a projekt során szerzett tanulságokat, beleértve a sikereket és kudarcokat..."></textarea>
+            
+            <label for="improvements">Fejlesztési lehetőségek:</label>
+            <textarea id="improvements" name="improvements" rows="5" placeholder="Írja le a jövőbeli fejlesztési lehetőségeket..."></textarea>
+            
+            <label for="new-opportunities">Új lehetőségek:</label>
+            <textarea id="new-opportunities" name="new-opportunities" rows="5" placeholder="Azonosítson új lehetőségeket a tanulságok alapján..."></textarea>
+            
+            <button type="submit">Tanulságok és fejlesztések mentése</button>
+        </form>
+        <h2>Korábbi projektek tanulságai</h2>
+        <ul>
+            <li>Projekt: Ügyfélportál fejlesztés - Tanulság: [Részletek...] - Fejlesztési lehetőségek: [Részletek...]</li>
+            <li>Projekt: Automatikus ügyfélkapcsolati rendszer - Tanulság: [Részletek...] - Fejlesztési lehetőségek: [Részletek...]</li>
+        </ul>
+    </div>
+</body>
+</html>
