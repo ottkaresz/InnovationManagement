@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vezetői Felülvizsgálat</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Vezetői Felülvizsgálat</h1>
+        <form action="/review" method="POST">
+            <label for="meeting-date">Felülvizsgálat dátuma:</label>
+            <input type="date" id="meeting-date" name="meeting-date">
+            
+            <label for="status">Felülvizsgálat státusza:</label>
+            <select id="status" name="status">
+                <option value="completed">Befejezve</option>
+                <option value="in-progress">Folyamatban</option>
+            </select>
+            
+            <label for="review-notes">Jegyzetek:</label>
+            <textarea id="review-notes" name="review-notes" rows="5" placeholder="Írja le a felülvizsgálat főbb megállapításait..."></textarea>
+            
+            <button type="submit">Mentés</button>
+        </form>
+        <h2>Korábbi Felülvizsgálatok</h2>
+        <ul>
+            <li>2024.10.01 - Státusz: Befejezve</li>
+            <li>2024.11.15 - Státusz: Folyamatban</li>
+        </ul>
+    </div>
+</body>
+</html>
