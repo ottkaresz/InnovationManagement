@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teljesítménymérési Dashboard</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        .chart {
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Teljesítménymutatók</h1>
+        <div class="chart">
+            <h2>Teljesítménytrendek</h2>
+            <img src="chart-placeholder.png" alt="Teljesítménymutatók grafikon" width="100%">
+        </div>
+        <h2>KPI-értékek</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Mutató</th>
+                    <th>Érték</th>
+                    <th>Trend</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Új innovációk száma</td>
+                    <td>15</td>
+                    <td>Pozitív</td>
+                </tr>
+                <tr>
+                    <td>Felhasználói elégedettség (%)</td>
+                    <td>87</td>
+                    <td>Stabil</td>
+                </tr>
+                <tr>
+                    <td>Bevezetési idő (nap)</td>
+                    <td>45</td>
+                    <td>Csökkenő</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Jelentések</h2>
+        <form action="/download-report" method="GET">
+            <button type="submit">Jelentés letöltése</button>
+        </form>
+    </div>
+</body>
+</html>
