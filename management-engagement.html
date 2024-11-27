@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vezetői Elkötelezettség</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Vezetői Elkötelezettség</h1>
+        <form action="/leadership-commitment" method="POST">
+            <label for="leader-message">Vezetői nyilatkozat:</label>
+            <textarea id="leader-message" name="leader-message" rows="5" placeholder="Írja ide a vezetői üzenetet..."></textarea>
+            
+            <label for="commitment-status">Elkötelezettség állapota:</label>
+            <select id="commitment-status" name="commitment-status">
+                <option value="active">Aktív</option>
+                <option value="planned">Tervezett</option>
+            </select>
+            
+            <button type="submit">Nyilatkozat mentése</button>
+        </form>
+        <h2>Korábbi vezetői nyilatkozatok</h2>
+        <ul>
+            <li>2024.10.10 - "Támogatjuk a kreatív gondolkodást minden szinten" - Aktív</li>
+            <li>2024.11.01 - "Kiemelt figyelmet fordítunk a fenntartható innovációra" - Tervezett</li>
+        </ul>
+    </div>
+</body>
+</html>
