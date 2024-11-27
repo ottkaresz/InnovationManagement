@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bevezetési Támogató</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Innováció Bevezetése</h1>
+        <form action="/launch" method="POST">
+            <label for="solution-name">Megoldás neve:</label>
+            <input type="text" id="solution-name" name="solution-name" placeholder="Pl.: Új ügyfélportál">
+            
+            <label for="deployment-plan">Bevezetési terv:</label>
+            <textarea id="deployment-plan" name="deployment-plan" rows="5" placeholder="Írja le a bevezetési tervet..."></textarea>
+            
+            <label for="status">Státusz:</label>
+            <select id="status" name="status">
+                <option value="planning">Tervezés alatt</option>
+                <option value="launching">Bevezetés alatt</option>
+                <option value="completed">Teljesítve</option>
+            </select>
+            
+            <button type="submit">Mentés</button>
+        </form>
+        <h2>Bevezetési állapotok</h2>
+        <ul>
+            <li>Megoldás 1 - Állapot: [Teljesítve]</li>
+            <li>Megoldás 2 - Állapot: [Bevezetés alatt]</li>
+        </ul>
+    </div>
+</body>
+</html>
