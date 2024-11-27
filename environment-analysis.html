@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Környezet Elemzési Modul</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .container { max-width: 800px; margin: 0 auto; padding: 20px; }
+        .header { text-align: center; margin-bottom: 20px; }
+        label, input, textarea, select { display: block; width: 100%; margin: 10px 0; }
+        button { background-color: #4CAF50; color: white; border: none; padding: 10px 15px; cursor: pointer; }
+        button:hover { background-color: #45a049; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Környezet Elemzési Modul</h1>
+            <p>Töltse fel és elemezze a releváns adatokat</p>
+        </div>
+        <form action="/upload" method="POST" enctype="multipart/form-data">
+            <label for="file-upload">Elemzéshez szükséges fájl feltöltése:</label>
+            <input type="file" id="file-upload" name="file">
+            
+            <label for="analysis-type">Válassza ki az elemzés típusát:</label>
+            <select id="analysis-type" name="analysis-type">
+                <option value="swot">SWOT elemzés</option>
+                <option value="pestle">PESTLE elemzés</option>
+            </select>
+            
+            <label for="comments">További megjegyzések:</label>
+            <textarea id="comments" name="comments" rows="5" placeholder="Írja ide a megjegyzéseit..."></textarea>
+            
+            <button type="submit">Adatok feltöltése</button>
+        </form>
+        <hr>
+        <h2>Eredmények</h2>
+        <p>A feltöltött fájlok és elemzések eredményei itt jelennek meg.</p>
+        <div id="results">[Eredmények megjelenítése]</div>
+    </div>
+</body>
+</html>
