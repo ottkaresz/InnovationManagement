@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Megoldások Fejlesztése</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Megoldások Fejlesztése</h1>
+        <form action="/develop-solutions" method="POST">
+            <label for="validated-concept">Válasszon validált koncepciót:</label>
+            <select id="validated-concept" name="validated-concept">
+                <option value="concept-1">Koncepció 1: Új ügyfélportál</option>
+                <option value="concept-2">Koncepció 2: Automatikus ügyfélkapcsolati rendszer</option>
+            </select>
+            
+            <label for="solution-design">Megoldás tervezése:</label>
+            <textarea id="solution-design" name="solution-design" rows="5" placeholder="Írja le, hogyan lesz a koncepció megoldássá alakítva..."></textarea>
+            
+            <label for="resources-needed">Szükséges erőforrások:</label>
+            <textarea id="resources-needed" name="resources-needed" rows="5" placeholder="Pl.: Fejlesztőcsapat, 5 M Ft költségkeret"></textarea>
+            
+            <label for="timeline">Idővonal:</label>
+            <input type="date" id="timeline" name="timeline">
+            
+            <button type="submit">Megoldás fejlesztése</button>
+        </form>
+        <h2>Fejlesztés alatt álló megoldások</h2>
+        <ul>
+            <li>Megoldás: Új ügyfélportál - Erőforrások: 5 fejlesztő, 5 M Ft - Határidő: 2025.03.31</li>
+            <li>Megoldás: Automatikus ügyfélkapcsolati rendszer - Erőforrások: 3 fejlesztő, 3 M Ft - Határidő: 2025.06.30</li>
+        </ul>
+    </div>
+</body>
+</html>
