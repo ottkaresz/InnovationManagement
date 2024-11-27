@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fejlesztési Terv</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Fejlesztési Terv</h1>
+        <form action="/development-plan" method="POST">
+            <label for="objective">Fejlesztési cél:</label>
+            <input type="text" id="objective" name="objective" placeholder="Pl.: Hatékonyság növelése">
+            
+            <label for="responsible">Felelős személy:</label>
+            <input type="text" id="responsible" name="responsible" placeholder="Pl.: Nagy Péter">
+            
+            <label for="timeline">Határidő:</label>
+            <input type="date" id="timeline" name="timeline">
+            
+            <label for="details">Terv részletei:</label>
+            <textarea id="details" name="details" rows="5" placeholder="Írja le a fejlesztési terv részleteit..."></textarea>
+            
+            <button type="submit">Mentés</button>
+        </form>
+        <h2>Aktuális Fejlesztési Tervek</h2>
+        <ul>
+            <li>Cél: Hatékonyság növelése - Felelős: Nagy Péter - Határidő: 2024.12.31</li>
+            <li>Cél: Piaci részesedés bővítése - Felelős: Kovács Anna - Határidő: 2025.03.15</li>
+        </ul>
+    </div>
+</body>
+</html>
