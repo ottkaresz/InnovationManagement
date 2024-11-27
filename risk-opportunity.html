@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kockázatok és Lehetőségek</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Kockázatok és Lehetőségek Kezelése</h1>
+        <form action="/manage-risks" method="POST">
+            <label for="risk-opportunity">Kockázat vagy lehetőség:</label>
+            <select id="risk-opportunity" name="type">
+                <option value="risk">Kockázat</option>
+                <option value="opportunity">Lehetőség</option>
+            </select>
+            
+            <label for="description">Leírás:</label>
+            <textarea id="description" name="description" rows="5" placeholder="Írja le a kockázatot vagy lehetőséget..."></textarea>
+            
+            <label for="severity">Kockázati súlyosság (1-5):</label>
+            <input type="number" id="severity" name="severity" min="1" max="5">
+            
+            <label for="priority">Prioritás:</label>
+            <select id="priority" name="priority">
+                <option value="low">Alacsony</option>
+                <option value="medium">Közepes</option>
+                <option value="high">Magas</option>
+            </select>
+            
+            <button type="submit">Mentés</button>
+        </form>
+        <h2>Jelenlegi kockázatok és lehetőségek</h2>
+        <ul>
+            <li>Típus: Kockázat - Leírás: Új piaci versenytárs megjelenése - Prioritás: Magas</li>
+            <li>Típus: Lehetőség - Leírás: Új technológiai fejlesztések kihasználása - Prioritás: Közepes</li>
+        </ul>
+    </div>
+</body>
+</html>
