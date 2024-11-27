@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teljesítménymérés</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        .chart {
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Teljesítménymérés</h1>
+        <form action="/add-performance-indicator" method="POST">
+            <label for="indicator-name">Teljesítménymutató neve:</label>
+            <input type="text" id="indicator-name" name="indicator-name" placeholder="Pl.: Új ügyfélportál bevezetés gyorsasága">
+            
+            <label for="indicator-value">Érték:</label>
+            <input type="text" id="indicator-value" name="indicator-value" placeholder="Pl.: 30 nap">
+            
+            <label for="category">Kategória:</label>
+            <select id="category" name="category">
+                <option value="input">Bemeneti mutató</option>
+                <option value="process">Folyamat mutató</option>
+                <option value="output">Kimeneti mutató</option>
+                <option value="result">Eredmény mutató</option>
+            </select>
+            
+            <label for="date">Dátum:</label>
+            <input type="date" id="date" name="date">
+            
+            <button type="submit">Teljesítménymutató hozzáadása</button>
+        </form>
+        <h2>Teljesítménymutatók</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Mutató neve</th>
+                    <th>Érték</th>
+                    <th>Kategória</th>
+                    <th>Dátum</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Új ügyfélportál bevezetés gyorsasága</td>
+                    <td>30 nap</td>
+                    <td>Folyamat mutató</td>
+                    <td>2024.11.27</td>
+                </tr>
+                <tr>
+                    <td>Ügyfél-elégedettség</td>
+                    <td>87%</td>
+                    <td>Eredmény mutató</td>
+                    <td>2024.11.27</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="chart">
+            <h2>Grafikon</h2>
+            <img src="chart-placeholder.png" alt="Teljesítménymutatók grafikon" width="100%">
+        </div>
+        <h2>Riportok</h2>
+        <form action="/download-report" method="GET">
+            <button type="submit">Riport letöltése</button>
+        </form>
+    </div>
+</body>
+</html>
