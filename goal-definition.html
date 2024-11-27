@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Célok Meghatározása</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Innovációs Célok Meghatározása</h1>
+        <form action="/set-goals" method="POST">
+            <label for="goal-name">Cél megnevezése:</label>
+            <input type="text" id="goal-name" name="goal-name" placeholder="Pl.: Új ügyfél-elégedettségi szint elérése">
+            
+            <label for="goal-description">Cél leírása:</label>
+            <textarea id="goal-description" name="goal-description" rows="5" placeholder="Írja le a célt részletesen..."></textarea>
+            
+            <label for="kpi">Kapcsolódó KPI:</label>
+            <input type="text" id="kpi" name="kpi" placeholder="Pl.: 95% ügyfél-elégedettség">
+            
+            <label for="deadline">Határidő:</label>
+            <input type="date" id="deadline" name="deadline">
+            
+            <button type="submit">Mentés</button>
+        </form>
+        <h2>Jelenlegi célok</h2>
+        <ul>
+            <li>Cél: Új ügyfél-elégedettségi szint elérése - Határidő: 2024.12.31</li>
+            <li>Cél: Termékfejlesztési idő csökkentése - Határidő: 2025.06.30</li>
+        </ul>
+    </div>
+</body>
+</html>
