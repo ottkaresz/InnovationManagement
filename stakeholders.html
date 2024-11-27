@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stakeholder Management</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Érdekelt felek kezelése</h1>
+        <form action="/stakeholders" method="POST">
+            <label for="stakeholder-name">Érdekelt fél neve:</label>
+            <input type="text" id="stakeholder-name" name="stakeholder-name" placeholder="Pl.: Ügyfél A">
+            
+            <label for="stakeholder-type">Típus:</label>
+            <select id="stakeholder-type" name="stakeholder-type">
+                <option value="partner">Partner</option>
+                <option value="customer">Ügyfél</option>
+                <option value="employee">Alkalmazott</option>
+            </select>
+            
+            <label for="needs">Igények és elvárások:</label>
+            <textarea id="needs" name="needs" rows="5" placeholder="Írja ide az érdekelt fél igényeit..."></textarea>
+            
+            <button type="submit">Adatok mentése</button>
+        </form>
+        <h2>Érdekelt felek listája</h2>
+        <ul>
+            <li>Ügyfél A - Igények: [Adatok]</li>
+            <li>Partner B - Igények: [Adatok]</li>
+        </ul>
+    </div>
+</body>
+</html>
