@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Képzés és Ösztönzés</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Képzés és Ösztönzés</h1>
+        <form action="/training-incentives" method="POST">
+            <label for="training-name">Képzés neve:</label>
+            <input type="text" id="training-name" name="training-name" placeholder="Pl.: Innovációs módszertanok alapjai">
+            
+            <label for="training-date">Képzés dátuma:</label>
+            <input type="date" id="training-date" name="training-date">
+            
+            <label for="incentive-type">Ösztönző típusa:</label>
+            <select id="incentive-type" name="incentive-type">
+                <option value="bonus">Bónusz</option>
+                <option value="recognition">Elismerés</option>
+                <option value="promotion">Előléptetés</option>
+            </select>
+            
+            <button type="submit">Mentés</button>
+        </form>
+        <h2>Képzések és ösztönzők</h2>
+        <ul>
+            <li>Képzés: Innovációs módszertanok - 2024.12.01</li>
+            <li>Ösztönző: Bónusz - "Legjobb innovációs ötlet" elismerés</li>
+        </ul>
+    </div>
+</body>
+</html>
