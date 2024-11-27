@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Értékelő Modul</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Innováció Értékelése</h1>
+        <form action="/evaluate" method="POST">
+            <label for="solution-select">Válasszon megoldást:</label>
+            <select id="solution-select" name="solution-id">
+                <option value="1">Megoldás 1</option>
+                <option value="2">Megoldás 2</option>
+            </select>
+            
+            <label for="kpi">KPI értékelés:</label>
+            <textarea id="kpi" name="kpi" rows="5" placeholder="Írja le a teljesítményindikátorokat..."></textarea>
+            
+            <label for="feedback">Felhasználói visszajelzések:</label>
+            <textarea id="feedback" name="feedback" rows="5" placeholder="Felhasználók véleménye és javaslatok..."></textarea>
+            
+            <button type="submit">Mentés</button>
+        </form>
+        <h2>Értékelési eredmények</h2>
+        <ul>
+            <li>Megoldás 1 - Hatás: [Pozitív]</li>
+            <li>Megoldás 2 - Hatás: [Fejlesztendő]</li>
+        </ul>
+    </div>
+</body>
+</html>
