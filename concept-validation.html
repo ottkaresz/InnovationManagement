@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validációs Modul</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Koncepció Validálása</h1>
+        <form action="/validate-concept" method="POST">
+            <label for="concept-select">Válasszon koncepciót:</label>
+            <select id="concept-select" name="concept-id">
+                <option value="1">Koncepció 1</option>
+                <option value="2">Koncepció 2</option>
+            </select>
+            
+            <label for="test-results">Tesztelési eredmények:</label>
+            <textarea id="test-results" name="test-results" rows="5" placeholder="Írja le az eredményeket..."></textarea>
+            
+            <label for="decision">Döntés:</label>
+            <select id="decision" name="decision">
+                <option value="continue">Folytatás</option>
+                <option value="modify">Módosítás</option>
+                <option value="cancel">Elvetés</option>
+            </select>
+            
+            <button type="submit">Validálás</button>
+        </form>
+        <h2>Validált koncepciók</h2>
+        <ul>
+            <li>Koncepció 1 - Állapot: [Folytatás]</li>
+            <li>Koncepció 2 - Állapot: [Módosítás ajánlott]</li>
+        </ul>
+    </div>
+</body>
+</html>
