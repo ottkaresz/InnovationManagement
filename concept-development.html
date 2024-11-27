@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koncepció Tervező</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Koncepciók Kidolgozása</h1>
+        <form action="/concepts" method="POST">
+            <label for="concept-name">Koncepció neve:</label>
+            <input type="text" id="concept-name" name="concept-name" placeholder="Pl.: Új ügyfélportál kialakítása">
+            
+            <label for="concept-details">Koncepció részletei:</label>
+            <textarea id="concept-details" name="concept-details" rows="5" placeholder="Írja le a koncepciót, célokat és várható eredményeket..."></textarea>
+            
+            <label for="concept-priority">Prioritás:</label>
+            <select id="concept-priority" name="concept-priority">
+                <option value="low">Alacsony</option>
+                <option value="medium">Közepes</option>
+                <option value="high">Magas</option>
+            </select>
+            
+            <button type="submit">Mentés</button>
+        </form>
+        <h2>Koncepciók listája</h2>
+        <ul>
+            <li>Koncepció 1 - Állapot: [Kidolgozás alatt]</li>
+            <li>Koncepció 2 - Állapot: [Véglegesítve]</li>
+        </ul>
+    </div>
+</body>
+</html>
