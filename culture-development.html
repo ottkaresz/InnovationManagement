@@ -4,10 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kultúra Fejlesztése</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .container { max-width: 800px; margin: 0 auto; padding: 20px; }
+        .header { text-align: center; margin-bottom: 20px; }
+        label, input, textarea, select { display: block; width: 100%; margin: 10px 0; }
+        button { background-color: #4c95af; color: white; border: none; padding: 10px 15px; cursor: pointer; }
+        button:hover { background-color: #45a049; }
+    </style>
 </head>
 <body>
     <div class="container">
-        <h1>Kultúra Fejlesztése</h1>
+        <div class="header">
+            <h1>Kultúra Fejlesztése</h1>
+        </div>
+        <div>
+            <p>Az innovációs kultúra előmozdítása magában foglalja a kreativitás, nyitottság és kockázatvállalás bátorítását. A szervezetnek támogatnia kell az alkalmazottakat abban, hogy merjenek újítani, és kezelje a kudarcot mint tanulási lehetőséget. Az ilyen kultúra növeli az elkötelezettséget és az eredmények hatékonyságát.</p>
+        </div>
         <form action="/culture-development" method="POST">
             <label for="initiative-name">Kezdeményezés neve:</label>
             <input type="text" id="initiative-name" name="initiative-name" placeholder="Pl.: Nyílt innovációs fórum">
