@@ -4,10 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tanulás és Fejlesztés</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .container { max-width: 800px; margin: 0 auto; padding: 20px; }
+        .header { text-align: center; margin-bottom: 20px; }
+        label, input, textarea, select { display: block; width: 100%; margin: 10px 0; }
+        button { background-color: #4c95af; color: white; border: none; padding: 10px 15px; cursor: pointer; }
+        button:hover { background-color: #45a049; }
+    </style>
 </head>
 <body>
     <div class="container">
-        <h1>Tanulás és Fejlesztés</h1>
+        <div class="header">
+            <h1>Tanulás és Fejlesztés</h1>
+        </div>
+        <div>
+            <p>A bevezetés során szerzett tapasztalatok segítik a jövőbeli innovációs folyamatok hatékonyságát. Az új ismeretek felhasználása kulcsfontosságú a folyamatos fejlődéshez.</p>
+        </div>
         <form action="/learning-development" method="POST">
             <label for="project-name">Projekt neve:</label>
             <input type="text" id="project-name" name="project-name" placeholder="Pl.: Ügyfélportál fejlesztés">
