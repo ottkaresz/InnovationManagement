@@ -4,10 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Innovációs Szándék</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .container { max-width: 800px; margin: 0 auto; padding: 20px; }
+        .header { text-align: center; margin-bottom: 20px; }
+        label, input, textarea, select { display: block; width: 100%; margin: 10px 0; }
+        button { background-color: #4c95af; color: white; border: none; padding: 10px 15px; cursor: pointer; }
+        button:hover { background-color: #45a049; }
+    </style>
 </head>
 <body>
     <div class="container">
-        <h1>Innovációs Szándék Rögzítése</h1>
+        <div class="header">
+            <h1>Innovációs Szándék Rögzítése</h1>
+        </div>
+        <div>
+            <p>A szervezetnek meg kell értenie az őt körülvevő külső környezetet, ideértve a piacokat, technológiai trendeket, szabályozásokat és versenytársakat. Ezenkívül azonosítani kell a belső tényezőket, például a kultúrát, a vezetői képességeket és az erőforrásokat, amelyek befolyásolhatják az innováció sikerességét. A környezet elemzése segít feltárni azokat a lehetőségeket és kockázatokat, amelyek meghatározzák az innovációs rendszer kiindulópontját. </p>
+        </div>
         <form action="/innovation-intent" method="POST">
             <label for="intent">Innovációs szándék megfogalmazása:</label>
             <textarea id="intent" name="intent" rows="5" placeholder="Írja le az innovációs szándékot..."></textarea>
