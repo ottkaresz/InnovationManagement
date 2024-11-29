@@ -4,10 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Célok Meghatározása</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .container { max-width: 800px; margin: 0 auto; padding: 20px; }
+        .header { text-align: center; margin-bottom: 20px; }
+        label, input, textarea, select { display: block; width: 100%; margin: 10px 0; }
+        button { background-color: #4c95af; color: white; border: none; padding: 10px 15px; cursor: pointer; }
+        button:hover { background-color: #45a049; }
+    </style>
 </head>
 <body>
     <div class="container">
-        <h1>Innovációs Célok Meghatározása</h1>
+        <div class="header">
+            <h1>Innovációs Célok Meghatározása</h1>
+        </div>
+        <div>
+            <p>Az innovációs célok világos irányt mutatnak az erőfeszítéseknek, és lehetővé teszik a haladás mérését. A célok lehetnek pénzügyi (pl. bevételnövekedés) vagy nem pénzügyi (pl. ügyfélelégedettség javítása). Az egyértelmű célkitűzések növelik az innovációs tevékenységek fókuszáltságát.</p>
+        </div>
         <form action="/set-goals" method="POST">
             <label for="goal-name">Cél megnevezése:</label>
             <input type="text" id="goal-name" name="goal-name" placeholder="Pl.: Új ügyfél-elégedettségi szint elérése">
