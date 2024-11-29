@@ -5,25 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teljesítménymérési Dashboard</title>
     <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        table, th, td {
-            border: 1px solid black;
-        }
-        th, td {
-            padding: 10px;
-            text-align: left;
-        }
-        .chart {
-            margin: 20px 0;
-        }
+        body { font-family: Arial, sans-serif; }
+        .container { max-width: 800px; margin: 0 auto; padding: 20px; }
+        .header { text-align: center; margin-bottom: 20px; }
+        label, input, textarea, select { display: block; width: 100%; margin: 10px 0; }
+        button { background-color: #4c95af; color: white; border: none; padding: 10px 15px; cursor: pointer; }
+        button:hover { background-color: #45a049; }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Teljesítménymutatók</h1>
+        <div class="header">
+            <h1>Teljesítménymutatók</h1>
+        </div>
+        <div>
+            <p>A teljesítményindikátorok, például a ROI vagy az ügyfélelégedettség mérik az innovációs tevékenységek eredményességét. Ezek az adatok segítenek a vezetésnek az eredmények objektív értékelésében.</p>
+        </div>
         <div class="chart">
             <h2>Teljesítménytrendek</h2>
             <img src="chart-placeholder.png" alt="Teljesítménymutatók grafikon" width="100%">
