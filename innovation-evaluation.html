@@ -4,10 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Értékelő Modul</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .container { max-width: 800px; margin: 0 auto; padding: 20px; }
+        .header { text-align: center; margin-bottom: 20px; }
+        label, input, textarea, select { display: block; width: 100%; margin: 10px 0; }
+        button { background-color: #4c95af; color: white; border: none; padding: 10px 15px; cursor: pointer; }
+        button:hover { background-color: #45a049; }
+    </style>
 </head>
 <body>
     <div class="container">
-        <h1>Innováció Értékelése</h1>
+        <div class="header">
+            <h1>Innováció Értékelése</h1>
+        </div>
+        <div>
+            <p>Az értékelési szakasz célja az innováció hatásának mérése az érdekelt felek elégedettségére és az üzleti eredményekre. Az értékelés során nyert adatok iránymutatást nyújtanak a jövőbeli fejlesztésekhez.</p>
+        </div>
         <form action="/evaluate" method="POST">
             <label for="solution-select">Válasszon megoldást:</label>
             <select id="solution-select" name="solution-id">
