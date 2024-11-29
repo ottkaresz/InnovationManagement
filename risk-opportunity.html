@@ -4,10 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kockázatok és Lehetőségek</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .container { max-width: 800px; margin: 0 auto; padding: 20px; }
+        .header { text-align: center; margin-bottom: 20px; }
+        label, input, textarea, select { display: block; width: 100%; margin: 10px 0; }
+        button { background-color: #4c95af; color: white; border: none; padding: 10px 15px; cursor: pointer; }
+        button:hover { background-color: #45a049; }
+    </style>
 </head>
 <body>
     <div class="container">
-        <h1>Kockázatok és Lehetőségek Kezelése</h1>
+        <div class="header">
+            <h1>Kockázatok és Lehetőségek Kezelése</h1>
+        </div>
+        <div>
+            <p>A szervezetnek fel kell térképeznie azokat a kockázatokat, amelyek akadályozhatják az innovációt, és meg kell határoznia a lehetőségeket, amelyek értéket teremthetnek. A proaktív kockázatkezelés csökkenti a bizonytalanságot és növeli az esélyét a sikeres megvalósításnak.</p>
+        </div>
         <form action="/manage-risks" method="POST">
             <label for="risk-opportunity">Kockázat vagy lehetőség:</label>
             <select id="risk-opportunity" name="type">
