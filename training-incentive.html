@@ -4,10 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Képzés és Ösztönzés</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .container { max-width: 800px; margin: 0 auto; padding: 20px; }
+        .header { text-align: center; margin-bottom: 20px; }
+        label, input, textarea, select { display: block; width: 100%; margin: 10px 0; }
+        button { background-color: #4c95af; color: white; border: none; padding: 10px 15px; cursor: pointer; }
+        button:hover { background-color: #45a049; }
+    </style>
 </head>
 <body>
     <div class="container">
-        <h1>Képzés és Ösztönzés</h1>
+        <div class="header">
+            <h1>Képzés és Ösztönzés</h1>
+        </div>
+        <div>
+            <p>Az alkalmazottak képzése biztosítja, hogy a szervezet rendelkezzen a szükséges kompetenciákkal az innovációs célok eléréséhez. Az ösztönző rendszerek – például bónuszok, elismerések vagy promóciók – arra ösztönöznek mindenkit, hogy aktívan részt vegyenek az innovációban. Ezáltal nő a kreatív hozzájárulás és az innováció elfogadottsága.</p>
+        </div>
         <form action="/training-incentives" method="POST">
             <label for="training-name">Képzés neve:</label>
             <input type="text" id="training-name" name="training-name" placeholder="Pl.: Innovációs módszertanok alapjai">
