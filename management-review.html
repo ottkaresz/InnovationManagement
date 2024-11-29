@@ -4,10 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vezetői Felülvizsgálat</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .container { max-width: 800px; margin: 0 auto; padding: 20px; }
+        .header { text-align: center; margin-bottom: 20px; }
+        label, input, textarea, select { display: block; width: 100%; margin: 10px 0; }
+        button { background-color: #4c95af; color: white; border: none; padding: 10px 15px; cursor: pointer; }
+        button:hover { background-color: #45a049; }
+    </style>
 </head>
 <body>
     <div class="container">
-        <h1>Vezetői Felülvizsgálat</h1>
+        <div class="header">
+            <h1>Vezetői Felülvizsgálat</h1>
+        </div>
+        <div>
+            <p>íA rendszeres vezetői felülvizsgálatok biztosítják, hogy az innovációs rendszer megfeleljen a változó piaci és szervezeti igényeknek. A felülvizsgálatok során azonosított gyengeségek fejlesztési lehetőségekké alakíthatók.</p>
+        </div>
         <form action="/review" method="POST">
             <label for="meeting-date">Felülvizsgálat dátuma:</label>
             <input type="date" id="meeting-date" name="meeting-date">
