@@ -4,10 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Koncepció Tervező</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .container { max-width: 800px; margin: 0 auto; padding: 20px; }
+        .header { text-align: center; margin-bottom: 20px; }
+        label, input, textarea, select { display: block; width: 100%; margin: 10px 0; }
+        button { background-color: #4c95af; color: white; border: none; padding: 10px 15px; cursor: pointer; }
+        button:hover { background-color: #45a049; }
+    </style>
 </head>
 <body>
     <div class="container">
-        <h1>Koncepciók Kidolgozása</h1>
+        <div class="header">
+            <h1>Koncepciók Kidolgozása</h1>
+        </div>
+        <div>
+            <p>A koncepciók kidolgozása során az ötleteket konkrét, megvalósítható tervekké alakítják. Ez magában foglalja a lehetséges értékek meghatározását és az alternatív megoldások elemzését.</p>
+        </div>
         <form action="/concepts" method="POST">
             <label for="concept-name">Koncepció neve:</label>
             <input type="text" id="concept-name" name="concept-name" placeholder="Pl.: Új ügyfélportál kialakítása">
